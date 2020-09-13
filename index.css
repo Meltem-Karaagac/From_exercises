@@ -1,0 +1,94 @@
+body{
+width: 100vw;
+
+}
+
+.wrap {
+    margin: 20px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns:  4rem 16rem  16rem  16rem;
+    grid-template-rows: 3rem 3rem 3rem;
+    gap: 10px;
+    font-size: small;
+    justify-content: center;
+    
+    
+}
+
+#input1{
+
+    grid-area: 1/1/span 1/span 4;
+}
+#btn3{
+    grid-area: 2/1/span 1/span 1;
+    background-color: gray;
+    border-color:gray;
+    font-size: 20px;
+
+}
+#input2{
+
+    grid-area: 2/2/span 1/span 1;
+}
+#input3{
+
+    grid-area: 2/3/span 1/span 1;
+}
+#btn2{
+    grid-area: 2/4/span 1/span 1;
+    background-color: gray;
+    border-color:gray;
+    font-size: 20px;
+}
+#btn1{
+    grid-area: 3/2/span 2/span 3;
+    justify-self: center;
+    border-radius: 28px;
+    background-color: gray;
+    border-color:gray;
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px){
+        
+        
+    .wrap {
+    margin: 20px;
+    display: grid;
+    grid-template-columns:  3rem 16rem;
+    grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem;
+    gap: 10px;
+    font-size: small;
+    grid-gap: 1rem;
+        
+    }
+
+
+#input1{
+
+    grid-area: 1/1/span 1/span 2;
+}
+#btn3{
+    grid-area: 2/1/span 1/span 1;
+
+}
+#input2{
+
+    grid-area: 2/2/span 1/span 1;
+}
+#input3{
+
+    grid-area: 3/1/span 1/span 2;
+}
+#btn2{
+    grid-area: 4/1/span 1/span 2;
+
+}
+#btn1{
+    grid-area: 5/1/span 1/span 2;
+
+}
+
+}
